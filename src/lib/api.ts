@@ -1,6 +1,9 @@
 import axios from "axios";
 
-const API_BASE = "https://finance-dashboard-backend-sigv.onrender.com";
+const API_BASE =
+  typeof window !== "undefined"
+    ? "/api"
+    : "https://finance-dashboard-backend-sigv.onrender.com";
 
 const api = axios.create({
   baseURL: API_BASE,

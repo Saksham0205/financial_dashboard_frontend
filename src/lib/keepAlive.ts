@@ -1,4 +1,7 @@
-const HEALTH_URL = "https://finance-dashboard-backend-sigv.onrender.com/health";
+const HEALTH_URL =
+  typeof window !== "undefined"
+    ? "/api/health"
+    : "https://finance-dashboard-backend-sigv.onrender.com/health";
 const INTERVAL = 10 * 60 * 1000; // 10 minutes
 
 let started = false;
