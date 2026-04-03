@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import KeepAlive from "@/components/KeepAlive";
 
 export const metadata: Metadata = {
   title: "FinanceFlow — Dashboard",
@@ -19,7 +20,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-full bg-surface">{children}</body>
+      <body className="min-h-full bg-surface">
+        <KeepAlive />
+        {children}
+      </body>
     </html>
   );
 }
