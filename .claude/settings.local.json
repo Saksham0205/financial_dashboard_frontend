@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --no-import-alias --use-npm)"
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --no-import-alias --use-npm)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(curl -s -X POST https://finance-dashboard-backend-sigv.onrender.com/auth/login -H 'Content-Type: application/json' -d '{\"email\":\"john@gmail.com\",\"password\":\"123456\"}')",
+      "Bash(curl -s https://finance-dashboard-backend-sigv.onrender.com/users -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWNmMzlhM2MxNmY0MGNmYTExZDZhYTciLCJlbWFpbCI6ImpvaG5AZ21haWwuY29tIiwiaWF0IjoxNzc1MTg4NTQ5LCJleHAiOjE3NzUxOTIxNDl9._pK6JW-1PBDziwjpw5YWfhPRCPx3KyvlzOiRwfnrdXQ')"
     ]
   }
 }
